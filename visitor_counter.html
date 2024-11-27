@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidirectional Visitor Counter</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb; /* Light grey background */
+            color: #333;
+        }
+        header {
+            background: #2c5282; /* Dark blue header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2b6cb0;
+            border-bottom: 2px solid #2b6cb0;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: circle;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background: #2c5282;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #4299e1; /* Blue for navigation */
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><strong>Bidirectional Visitor Counter</strong></h1>
+    </header>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#technology">Technology</a>
+        <a href="#outcome">Outcome</a>
+        <a href="#conclusion">Conclusion</a>
+    </nav>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Tracking the number of visitors entering and exiting a space can be challenging. The <strong>Bidirectional Visitor Counter</strong> automates this process using two infrared (IR) sensors and an I2C-connected LCD display. It ensures precision in counting, distinguishing between entry and exit movements, and dynamically displays the count on an easy-to-read screen. This solution is ideal for environments like libraries, meeting rooms, and events.</p>
+        </section>
+
+        <section id="problem">
+            <h2>Problem We Are Solving</h2>
+            <p>Key challenges in visitor management include:</p>
+            <ul>
+                <li><strong>Capacity Management:</strong> Preventing overcrowding and ensuring compliance with safety guidelines.</li>
+                <li><strong>Resource Optimization:</strong> Adjusting resources like lighting and HVAC based on real-time occupancy.</li>
+                <li><strong>Security:</strong> Monitoring authorized access to secure areas.</li>
+                <li><strong>Reducing Human Error:</strong> Eliminating inaccuracies in manual visitor counting.</li>
+            </ul>
+        </section>
+
+        <section id="solution">
+            <h2>The Proposed Solution</h2>
+            <p>The <strong>Bidirectional Visitor Counter</strong> automates visitor tracking with the following features:</p>
+            <ul>
+                <li><strong>Automatic Visitor Counting:</strong> Detects entry and exit movements using two IR sensors.</li>
+                <li><strong>Real-Time Display:</strong> Shows the current visitor count on an I2C Serial Monitor HW61.</li>
+                <li><strong>Ease of Installation:</strong> Simple setup without major modifications.</li>
+                <li><strong>Scalability:</strong> Easily expandable for larger environments.</li>
+            </ul>
+        </section>
+
+        <section id="technology">
+            <h2>Technology Used and How It Works</h2>
+            <h3>Components</h3>
+            <ul>
+                <li><strong>IR Modules:</strong> Detect movement and direction.</li>
+                <li><strong>Microcontroller:</strong> Processes sensor data and updates the display.</li>
+                <li><strong>I2C Serial Monitor HW61:</strong> Displays real-time visitor count.</li>
+            </ul>
+            <h3>Working Principle</h3>
+            <ul>
+                <li><strong>Entry Detection:</strong> Triggered by Sensor 1 followed by Sensor 2.</li>
+                <li><strong>Exit Detection:</strong> Triggered by Sensor 2 followed by Sensor 1.</li>
+                <li><strong>Error Handling:</strong> Safeguards to ensure accurate counting.</li>
+            </ul>
+        </section>
+
+        <section id="outcome">
+            <h2>Outcome of the Problem</h2>
+            <ul>
+                <li><strong>Accurate Occupancy Data:</strong> Real-time count of visitors for effective management.</li>
+                <li><strong>Enhanced Resource Efficiency:</strong> Optimized use of lighting and HVAC systems.</li>
+                <li><strong>Increased Security:</strong> Monitors visitor movements for better safety.</li>
+                <li><strong>Cost-Effective:</strong> Affordable and scalable for various environments.</li>
+            </ul>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>The <strong>Bidirectional Visitor Counter</strong> provides a precise, scalable, and cost-effective solution for managing visitor flow in diverse environments. By leveraging affordable components and a straightforward design, it ensures accurate counting, improved resource management, and enhanced security.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bidirectional Visitor Counter | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

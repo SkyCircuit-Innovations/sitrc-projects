@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Quadrant DC Motor Speed Control</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7; /* Light grey-blue background */
+            color: #333;
+        }
+        header {
+            background: #2c3e50; /* Dark slate blue header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: circle;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #34495e; /* Dark grey-blue for navigation */
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Microcontroller-Based 4-Quadrant DC Motor Speed Control</h1>
+    </header>
+    <nav>
+        <a href="#problem-statement">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#technology">Technology</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#future-improvements">Future</a>
+    </nav>
+    <main>
+        <section id="problem-statement">
+            <h2>Problem Statement</h2>
+            <p>Traditional methods of controlling DC motor speed often involve bulky and less precise techniques like potentiometers or rheostats. These methods suffer from several limitations:</p>
+            <ul>
+                <li><strong>Power Dissipation:</strong> Significant power loss as heat in resistive elements.</li>
+                <li><strong>Limited Control Range:</strong> Difficulty in achieving precise speed adjustments.</li>
+                <li><strong>Lack of Bidirectional Control:</strong> Unidirectional operation restricts motor use.</li>
+            </ul>
+        </section>
+
+        <section id="solution">
+            <h2>Proposed Solution</h2>
+            <p>The microcontroller-based 4-quadrant DC motor speed control system addresses these challenges by providing precise control over the motor's speed and direction, ensuring efficient and flexible operation.</p>
+        </section>
+
+        <section id="technology">
+            <h2>Technology and How It Works</h2>
+            <h3>Hardware Components</h3>
+            <ul>
+                <li><strong>Microcontroller:</strong> Core system control, e.g., Arduino or Raspberry Pi.</li>
+                <li><strong>DC Motor:</strong> Application-specific motor for controlled operation.</li>
+                <li><strong>H-Bridge Driver:</strong> Enables bidirectional control, e.g., L298N.</li>
+                <li><strong>Power Supply:</strong> Provides system power, rated for motor needs.</li>
+                <li><strong>Push Buttons/Potentiometer:</strong> User inputs for commands like speed and direction.</li>
+                <li><strong>LED Indicators:</strong> Visual feedback for status.</li>
+            </ul>
+            <h3>Software Features</h3>
+            <ul>
+                <li>Reads input signals (e.g., buttons or potentiometer).</li>
+                <li>Generates control signals for the H-bridge driver.</li>
+                <li>Controls motor direction and speed using PWM.</li>
+                <li>Supports forward and reverse braking for safety.</li>
+            </ul>
+        </section>
+
+        <section id="outcomes">
+            <h2>Expected Outcomes</h2>
+            <ul>
+                <li><strong>Precise Speed Control:</strong> Smooth and accurate operation.</li>
+                <li><strong>Bidirectional Operation:</strong> Forward and reverse rotation capabilities.</li>
+                <li><strong>Efficient Operation:</strong> Reduced energy wastage.</li>
+                <li><strong>Flexible Control:</strong> Adaptable to various strategies.</li>
+            </ul>
+        </section>
+
+        <section id="future-improvements">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>Integrate sensors for closed-loop control.</li>
+                <li>Enable wireless communication for remote control.</li>
+                <li>Implement advanced control algorithms, like PID.</li>
+                <li>Optimize for energy efficiency with low-power components.</li>
+                <li>Develop user-friendly monitoring interfaces.</li>
+                <li>Add safety features like overcurrent protection.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Microcontroller-Based 4-Quadrant DC Motor Speed Control | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
